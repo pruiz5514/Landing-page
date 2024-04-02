@@ -16,7 +16,7 @@
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Document</title>
+    <title>Mercedes Benz</title>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
             <ul>
                 <li><a href="#carros-seccion">Carros</a></li>
                 <li><a href="#camionetas-seccion">Camionetas</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#contacto-seccion">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -167,7 +167,20 @@
 
         <h2 id="contacto-seccion">Contacto</h2>
         <section class="contacto">
-
+            <form action="./src/pages/servidor.html" method="get">
+                <div>
+                    <label for="nombre-completo">Nombre completo</label>
+                    <input name="nombre-completo" id="nombre-completo" type="text">
+                </div>
+                <div>
+                    <label for="correo">Correo electronico</label>
+                    <input name="correo" id="correo" type="email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+            </form>
         </section>
     </main>
 </body>

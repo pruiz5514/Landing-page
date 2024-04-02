@@ -110,3 +110,9 @@ h2{
 .precio{
     margin-top: 10px;
 }
+
+.contacto{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
