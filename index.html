@@ -15,10 +15,12 @@
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Mercedes Benz</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <section class="leftHeader">
             <figure>
@@ -27,16 +29,26 @@
         </section>
         <nav>
             <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#carros-seccion">Carros</a></li>
                 <li><a href="#camionetas-seccion">Camionetas</a></li>
                 <li><a href="#contacto-seccion">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main -->
     <main>
         <figure class="imgPrincipal-container">
         </figure>
 
+        <!-- Inicio de seccion del video -->
+        <h2 id="nosotros">Nosotros</h2>
+        <section class="video-container">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/06S1REFwW_Q?si=4yiO74hrJkCk3wdb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Inicio de seccion carros -->
         <h2 id="carros-seccion">Carros</h2>
         <section class="carros">
             <article class="vehiculo-container">
@@ -101,6 +113,7 @@
             
         </section>
 
+        <!-- Inicio de seccion camionetas -->
         <h2 id="camionetas-seccion">Camionetas</h2>
         <section class="carros">
             <article class="vehiculo-container">
@@ -165,26 +178,35 @@
             
         </section>
 
+        <!-- Inicio de seccion contactos -->
         <h2 id="contacto-seccion">Contacto</h2>
-
         <section class="contacto">
-            <form action="./src/pages/servidor.html" method="get">
-                <div>
-                    <label for="nombre-completo">Nombre completo</label>
-                    <input name="nombre-completo" id="nombre-completo" type="text">
-                </div>
-                <div>
-                    <label for="correo">Correo electronico</label>
-                    <input name="correo" id="correo" type="email">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input class="botonEnviar" type="submit" value="Enviar">
-                </div>
-            </form>
+
+            <!-- Contenedor de formulario -->
+            <article class="contacto-leftContainer">
+                <form action="./src/pages/servidor.html" method="get">
+                    <div>
+                        <label for="nombre-completo">Nombre completo</label>
+                        <input name="nombre-completo" id="nombre-completo" type="text">
+                    </div>
+                    <div>
+                        <label for="correo">Correo electronico</label>
+                        <input name="correo" id="correo" type="email">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input class="botonEnviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </article >
+            <article class="contacto-rightContainer">
+                <address>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.377227176661!2d-75.58305932420903!3d6.213879993774058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d1672c8687%3A0x62f9ca2aac2f7c1f!2sMercedes-Benz%20Alemautos%20Mall%20R%C3%ADo%2010!5e0!3m2!1ses-419!2sco!4v1712335107297!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </address>
+            </article>
         </section>
     </main>
 
@@ -192,8 +214,13 @@
         <section class="leftFooter">
             <p>TÉRMINOS Y CONDICIONES POLÍTICA DE TRATAMIENTO DE PROTECCIÓN Y USO DATOS PERSONALES 2024 POLÍTICA DE USO DE COOKIES MANUAL DEL PROGRAMA DE TRANSPARENCIA Y ÉTICA EMPRESARIAL 2024 MERCEDES-BENZ COLOMBIA</p>
         </section>
-        <section>
-            <ul></ul>
+        <section class="rightFooter">
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com/mercedesbenzcolombia/"><i class="bi bi-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/mercedesbenzcol/"><i class="bi bi-linkedin"></i></a> </li>
+                <li><a target="_blank" href="https://www.facebook.com/MercedesBenzColombia/?locale=es_LA"><i class="bi bi-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCXSqRExr_FsEpABn5a3iATg"> <i class="bi bi-youtube"></i> </a></li>
+            </ul>
         </section>
     </footer>
 </body>
