@@ -3,6 +3,8 @@
 :root{
     --black: #000000;
     --white: #FFFFFF;
+    --gray: #CCCCCC;
+    --blue: #0095f6
 }
 
 *{
@@ -115,4 +117,45 @@ h2{
     width: 90%;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+#correo, #nombre-completo{
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray);
+}
+
+#mensaje{
+    width: 550px;
+    height: 160px;
+    resize: none;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray);
+}
+
+.botonEnviar{
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--blue);
 }
