@@ -18,6 +18,7 @@ html{
     font-family: "Roboto", sans-serif;
 }
 
+/* Estilos del header */
 header{
     width: 100%;
     height: 90px;
@@ -58,6 +59,7 @@ nav ul li a{
     color: var(--white);
 }
 
+/* Estilos del main */
  main{
     width: 100%;
     height: auto;
@@ -65,7 +67,8 @@ nav ul li a{
 
 .imgPrincipal-container {
     width: 100%;
-    height: 550px;
+    min-height: calc(100vh - 90px);
+    /* height: 550px; */
     background-image: url('https://www.hdcarwallpapers.com/walls/mercedes_amg_s_63_e_performance_2024_8k-HD.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -73,8 +76,10 @@ nav ul li a{
     margin-bottom: 40px;
 }
 
+/* Seccion del video */
 .video-container{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 50%;
     height: auto;
     padding-bottom: 30px;
@@ -82,8 +87,8 @@ nav ul li a{
 }
 
 .video{
-    width: 600px;
-    height: 400;
+    max-width: 600px;
+    min-height: 400;
 }
 
 h2{
@@ -93,6 +98,7 @@ h2{
     margin-bottom: 30px;
 }
 
+/* Estilos de seccion de carros y camionetas  */
 .carros{
     display: flex;
     flex-wrap: wrap;
@@ -127,6 +133,7 @@ h2{
     margin-top: 10px;
 }
 
+/* Seccion de contacto */
 .contacto{
     display: flex;
     width: 90%;
@@ -192,6 +199,7 @@ label{
     height: 100%;
 }
 
+/* Estilos del footer */
 footer{
     display: flex;
     width: 100%;
