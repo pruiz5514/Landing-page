@@ -34,8 +34,9 @@ header{
     padding: 0 30px;  
 }
 
-.logoMercedez{
-    width: 220px;
+.logoMercedes{
+    width: 80%;
+    min-width: 100px;
 }
 
 nav{
